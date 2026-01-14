@@ -160,7 +160,7 @@ const StudentForm = () => {
               value={formData.course}
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-lg 
-                         bg-white/10 text-white
+                         bg-white/10 text-black
                          border border-white/20 
                          focus:outline-none focus:ring-2 focus:ring-purple-500"
             >
