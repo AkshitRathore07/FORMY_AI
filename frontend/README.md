@@ -1,16 +1,89 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 📄 README.md — Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 Save this as: `frontend/README.md`
 
-## React Compiler
+```md
+# FormyAI – Student Registration Frontend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is the frontend application for the Student Registration Flow built using **React (Vite)** as part of the **FormyAI Full-Stack Developer Intern assignment**.
 
-## Expanding the ESLint configuration
+It provides a clean, centralized UI to register students and communicate with the backend APIs.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- React (Vite)
+- JavaScript (ES6+)
+- Axios
+- Tailwind CSS (for styling)
+
+---
+
+## ✨ Features
+
+- Student registration form with:
+  - Full Name
+  - Email
+  - Mobile Number
+  - Date of Birth
+  - Course selection
+- Client-side form validation
+- Backend API integration
+- Proper success & error message handling
+- Centered, responsive, and clean UI design
+
+---
+
+## 📁 Project Structure
+
+frontend/
+│
+├── src/
+│ ├── components/
+│ │ └── StudentForm.jsx
+│ ├── services/
+│ │ └── api.js
+│ ├── App.jsx
+│ └── main.jsx
+└── .env
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file inside the frontend directory:
+
+```env
+VITE_API_URL=https://your-backend-url.onrender.com/api
+▶️ How to Run Locally
+bash
+Copy code
+git clone https://github.com/AkshitRathore07/FORMY_AI.git
+cd FORMY_AI/frontend
+npm install
+npm run dev
+Application will start on:
+
+arduino
+Copy code
+http://localhost:5173
+🌍 Live Deployment
+The frontend is deployed at:
+
+https://formy-ai-phi.vercel.app/
+
+🚀 Future Improvements
+With more time, the following can be added:
+
+Authentication using JWT for admin features
+
+Student listing UI (GET /api/students) in a table format
+
+Multi-step form / stepper-based registration
